@@ -1,0 +1,63 @@
+{
+    "model": "EfficientNetV2B0",
+    "class_names": [
+        "benign",
+        "malignant",
+        "normal"
+    ],
+    "test_loss": 0.13992924988269806,
+    "test_accuracy": 1.0,
+    "test_accuracy_percent": 100.0,
+    "classification_report": {
+        "benign": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+        },
+        "malignant": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5.0
+        },
+        "normal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 3.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 24.0
+        },
+        "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 24.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            16,
+            0,
+            0
+        ],
+        [
+            0,
+            5,
+            0
+        ],
+        [
+            0,
+            0,
+            3
+        ]
+    ],
+    "test_sample_count": 24,
+    "medical_validation": "Not clinically validated. Research prototype only."
+}

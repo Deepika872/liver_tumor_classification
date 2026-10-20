@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.env
+
+# Dataset and preprocessed images
+backend/dataset/
+backend/preprocessed_dataset/
+preprocessed_dataset/
+
+# Trained models
+backend/models/*.keras
+backend/models/*.h5
+
+# Frontend dependencies
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+frontend/.env*
+
+backend/dataset_sample_check.png

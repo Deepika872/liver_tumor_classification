@@ -1,0 +1,34 @@
+:root {
+  /* Brand colors */
+  --color-primary: #087e68;
+  --color-primary-hover: #06634f;
+  --color-primary-light: #e5f7ef;
+
+  /* Text colors */
+  --color-text: #17332f;
+  --color-text-muted: #71857d;
+
+  /* Backgrounds */
+  --color-background: #f4faf7;
+  --color-surface: #ffffff;
+
+  /* Borders and status */
+  --color-border: #e1eee7;
+  --color-error: #bd3636;
+  --color-success: #087e68;
+
+  /* Typography */
+  --font-body: "DM Sans", sans-serif;
+  --font-heading: "Manrope", sans-serif;
+
+  /* Layout */
+  --container-width: 1200px;
+  --navbar-height: 76px;
+
+  /* Reusable design */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --shadow-card: 0 12px 35px rgb(23 51 47 / 7%);
+}

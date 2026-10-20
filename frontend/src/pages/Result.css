@@ -1,0 +1,242 @@
+
+.result-page {
+  width: min(1100px, 92%);
+  margin: 48px auto;
+}
+
+.result-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.result-heading h1 {
+  margin: 12px 0;
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 4vw, 40px);
+}
+
+.result-heading > p:last-child {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.result-card,
+.result-empty {
+  padding: 26px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.result-card h2 {
+  margin: 0 0 22px;
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: 21px;
+}
+
+.result-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  background: var(--color-background);
+  border-radius: var(--radius-md);
+}
+
+.result-image {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.result-caption {
+  margin-bottom: 20px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.prediction-label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-md);
+}
+
+.prediction-label span,
+.confidence-header span {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.prediction-label strong {
+  color: var(--color-primary);
+  font-size: 25px;
+}
+
+.confidence-section {
+  margin-top: 28px;
+}
+
+.confidence-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.confidence-header strong {
+  color: var(--color-text);
+}
+
+.confidence-track {
+  height: 9px;
+  overflow: hidden;
+  background: var(--color-border);
+  border-radius: 20px;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.result-message {
+  margin-top: 24px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.result-pending {
+  margin: auto 0;
+  padding: 22px 0;
+}
+
+.pending-icon,
+.result-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 18px;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  border-radius: 16px;
+}
+
+.result-pending h3,
+.result-empty h1 {
+  color: var(--color-text);
+  font-family: var(--font-heading);
+}
+
+.result-pending p,
+.result-empty p {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.pending-status {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 12px;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.result-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 18px;
+  color: var(--color-text-muted);
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.result-disclaimer svg {
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.result-disclaimer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.result-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.result-empty {
+  max-width: 520px;
+  margin: 70px auto;
+  text-align: center;
+}
+
+.result-empty .result-icon {
+  margin: 0 auto 18px;
+}
+
+@media (max-width: 720px) {
+  .result-page {
+    margin: 28px auto;
+  }
+
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card {
+    padding: 20px;
+  }
+
+  .result-image-wrapper {
+    min-height: 200px;
+  }
+}
